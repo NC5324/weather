@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="script.js" type="module"></script>
+</head>
+<body>
+<template id="next-days">
+    <div class="day">Day of week</div>
+    <div class="weather"></div>
+    <div class="high">20°</div>
+    <div class="low">10°</div>
+</template>
+<template id="weather-icon">
+    <img src="http://openweathermap.org/img/wn/01d@2x.png" width="50px" height="50px" alt="icon" style="transform: translate(0, -10px)">
+</template>
+<div class="wrapper">
+    <div class="container">
+        <header>
+            <form id="search" action="#">
+                <div class="input-container">
+                    <i class="fa fa-search fa-lg icon"></i>
+                    <input id="city" type="text" placeholder="Enter city...">
+                </div>
+            </form>
+            <h1>City</h1>
+            <h2>Weather Status</h2>
+            <h3>20°</h3>
+        </header>
+        <main>
+            <!-- Info for next 7 days will be here -->
+        </main>
+        <footer>
+            <form id="auth" action="#">
+                <div class="input-container">
+                    <i class="fa fa-key fa-lg icon"></i>
+                    <input id="key" type="text" placeholder="Enter API key...">
+                </div>
+            </form>
+        </footer>
+    </div>
+</div>
+</body>
+</html>

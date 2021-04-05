@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+*::selection {
+    background-color: #E6B566;
+}
+
+html, body {
+    background-color: #18141D;
+}
+
+.wrapper {
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.container {
+    width: 375px;
+    max-width: 425px;
+    height: 100vh;
+    max-height: 700px;
+
+    margin: auto;
+    padding: 36px;
+
+    display: flex;
+    flex-flow: column nowrap;
+
+    background-color: #18141D;
+}
+
+.input-container {
+    display: flex;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+.icon {
+    padding: 15px 10px 10px 10px;
+    min-width: 55px;
+    height: 50px;
+    vertical-align: bottom;
+
+    text-align: center;
+
+    border-radius: 25px 0 0 25px;
+    background-color: white;
+    cursor: pointer;
+}
+
+.icon2 {
+    width: 25px;
+    height: 25px;
+    text-align: center;
+
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    height: 50px;
+
+    font-family: "Roboto", "Open Sans", Arial, sans-serif;
+    font-size: 20px;
+    padding: 10px;
+
+    border: none;
+
+    border-radius: 0 25px 25px 0;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+h1 {
+    font-family: "Roboto", "Open Sans", Arial, sans-serif;
+    font-weight: 500;
+    font-size:  30px;
+    color: white;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-family: "Roboto", "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    color: white;
+    text-align: center;
+
+    margin-bottom: 15px;
+}
+
+h3 {
+    font-family: "Roboto", "Open Sans", Arial, sans-serif;
+    font-weight: 500;
+    font-size: 100px;
+    color: white;
+    padding-left: 30px;
+    text-align: center;
+
+    margin-bottom: 20px;
+}
+
+header {
+    border-bottom: 2px solid white;
+}
+
+main {
+    border-bottom: 2px solid white;
+
+    padding: 20px 5px 20px 4px;
+
+    display: grid;
+    grid-template-columns: minmax(140px, 1fr) minmax(25px, 1fr) minmax(65px, 1fr) minmax(65px, 1fr);
+    grid-template-rows: repeat(5, minmax(25px, 1fr));
+    grid-row-gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.day {
+    font-family: "Roboto", "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+
+    grid-column-start: 1;
+    grid-column-end: 2;
+}
+
+.weather {
+    /*background-color: orange;
+    border-radius: 50%;*/
+    width: 25px;
+    height: 25px;
+}
+
+.high, .low {
+    text-align: right;
+    font-family: "Roboto", "Open Sans", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+}
