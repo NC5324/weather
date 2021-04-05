@@ -37,7 +37,7 @@ $(document).ready(function() {
                             clone.querySelector('.low').textContent = Math.floor(data.list[j].main.temp_min) + '°'
                             let icon = document.querySelector('#weather-icon').content.cloneNode(true)
                             let i = icon.querySelector('img')
-                            $(i).attr('src', `http://openweathermap.org/img/wn/${data.list[j].weather[0].icon}@2x.png`)
+                            $(i).attr('src', `https://openweathermap.org/img/wn/${data.list[j].weather[0].icon}@2x.png`)
                             clone.querySelector('.weather').appendChild(icon)
                             main.appendChild(clone)
 
