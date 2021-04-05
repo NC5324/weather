@@ -7,6 +7,7 @@
     <link rel="icon" href="https://openweathermap.org/img/wn/01d@2x.png">
 
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="toggle.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -25,14 +26,21 @@
     <img src="https://openweathermap.org/img/wn/01d@2x.png" width="50px" height="50px" alt="icon" style="transform: translate(0, -10px)">
 </template>
 <div class="wrapper">
+    <div class="switch-container">
+        <input id="checkbox" type="checkbox" class="checkbox">
+        <label for="checkbox" class="label">
+            <i class="fas fa-moon"></i>
+            <i class="fas fa-sun"></i>
+            <div class="ball"></div>
+        </label>
+    </div>
+
     <div class="container">
         <header>
-            <form id="search">
-                <div class="input-container">
-                    <i class="fa fa-search fa-lg icon"></i>
-                    <input id="city" type="text" placeholder="Enter city...">
-                </div>
-            </form>
+            <div class="input-container">
+                <i class="fa fa-search fa-lg icon"></i>
+                <input id="city" type="text" placeholder="Enter city...">
+            </div>
             <h1>City</h1>
             <h2>Weather Status</h2>
             <h3>20°</h3>

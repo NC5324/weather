@@ -2,8 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
-    text-shadow: 2px 2px 4px #000000;
 }
 
 *::selection {
@@ -11,7 +9,8 @@
 }
 
 html, body {
-    background-color: #18141D;
+    background-color: #2e5077;
+    /*background-color: #18141D #2e5077*/
 }
 
 .wrapper {
@@ -33,8 +32,6 @@ html, body {
 
     display: flex;
     flex-flow: column nowrap;
-
-    background-color: #18141D;
 }
 
 .input-container {
@@ -88,6 +85,7 @@ h1 {
     font-size:  30px;
     color: white;
     text-align: center;
+    text-shadow: 2px 2px 4px #000000;
 
     margin-bottom: 10px;
 }
@@ -98,6 +96,7 @@ h2 {
     font-size: 22px;
     color: white;
     text-align: center;
+    text-shadow: 2px 2px 4px #000000;
 
     margin-bottom: 15px;
 }
@@ -109,6 +108,7 @@ h3 {
     color: white;
     padding-left: 30px;
     text-align: center;
+    text-shadow: 2px 2px 4px #000000;
 
     margin-bottom: 20px;
 }
@@ -135,6 +135,7 @@ main {
     font-weight: 400;
     font-size: 20px;
     color: white;
+    text-shadow: 2px 2px 4px #000000;
 
     grid-column-start: 1;
     grid-column-end: 2;
@@ -153,4 +154,5 @@ main {
     font-weight: 400;
     font-size: 20px;
     color: white;
+    text-shadow: 2px 2px 4px #000000;
 }

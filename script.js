@@ -1,11 +1,20 @@
 import TestService from './service/test-service.js'
 
 $(document).ready(function() {
+
+    $('.checkbox').click(function(){
+        const checked = document.getElementById('checkbox').checked
+        if(checked === true) {
+            document.body.style.backgroundColor = '#292C35'
+        } else {
+            document.body.style.backgroundColor = '#2e5077'
+        }
+    })
+
     let city = undefined
     let apiKey = undefined
     $('#city, #key').keypress(function (e) {
         if (e.which === 13) {
-            $('form#search').submit()
             city = document.querySelector('#city').value
             apiKey = document.querySelector('#key').value
             TestService.getData(city, apiKey).then(
