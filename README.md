@@ -3,7 +3,7 @@ Weather forecast application using OpenWeather's API.
 The UI is designed for mobile and it consists of current weather status for selected city and forecast for the next 5 days with high/low temperature for the day.
 There is also a light/dark mode toggle at the upper left corner.
 
-You can check out the functionality at [https://nc5324.github.io/weather](https://nc5324.github.io/weather "Weather forecast application")
+You can check out the functionality at [https://nc5324.github.io/weather](https://nc5324.github.io/weather "Weather forecast application")<br>
 A free-tier API key from OpenWeather is required to access the functionality. You can get one by registering [here](https://https://openweathermap.org/api "OpenWeather's Website")
 
 Few screenshots showcasing the structure of the application:
