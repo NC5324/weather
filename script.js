@@ -6,8 +6,10 @@ $(document).ready(function() {
         const checked = document.getElementById('checkbox').checked
         if(checked === true) {
             document.body.style.backgroundColor = '#292C35'
+            document.querySelector('html').style.backgroundColor = '#292C35'
         } else {
             document.body.style.backgroundColor = '#2e5077'
+            document.querySelector('html').style.backgroundColor = '#2e5077'
         }
     })
 
@@ -46,7 +48,7 @@ $(document).ready(function() {
                             clone.querySelector('.low').textContent = Math.floor(data.list[j].main.temp_min) + '°'
                             let icon = document.querySelector('#weather-icon').content.cloneNode(true)
                             let i = icon.querySelector('img')
-                            $(i).attr('src', `https://openweathermap.org/img/wn/${data.list[j].weather[0].icon}@2x.png`)
+                            $(i).attr('src', `https://openweathermap.org/img/wn/${data.list[j].weather[0].icon.slice(0,2)}d@2x.png`)
                             clone.querySelector('.weather').appendChild(icon)
                             main.appendChild(clone)
 
