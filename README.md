@@ -4,13 +4,14 @@ The UI is designed for mobile and it consists of current weather status for sele
 There is also a light/dark mode toggle at the upper left corner.
 
 You can check out the functionality at [https://nc5324.github.io/weather](https://nc5324.github.io/weather "Weather forecast application")
+A free-tier API key from OpenWeather is required to access the functionality. You can get one by registering [here](https://https://openweathermap.org/api "OpenWeather's Website")
 
 Few screenshots showcasing the structure of the application:
 
 <h2>Light mode</h2>
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Light mode")
+![Light mode UI](https://github.com/NC5324/weather/blob/master/demo-img/ui-light.png "Light mode")
 
 <h2>Dark mode</h2>
 
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Light mode")
+![Dark mode UI](https://github.com/NC5324/weather/blob/master/demo-img/ui-dark.png "Dark mode")
